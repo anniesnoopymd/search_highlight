@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+
+
+  </script>
+</head>
+<body>
+
+
+<div class="container" id="app">
+  <div class="row gra">
+    <div class="col-sm-12"><br/>
+      <label>Keyword</label>
+      <input v-model="filter"/>
+    </div>
+  </div>
+  <div class="row">
+    <postbox v-bind:post="p" v-for="p in filtered_post"></postbox>
+  </div>
+</div>
+<template id="post">
+  <div class="postbox col-sm-4">
+    <div class="postbox_inner">
+      <div class="img" v-bind:src="coverurl" v-bind:style="covercss"></div>
+      <h6 v-html="post.name_short"></h6>
+      <h4 v-html="post.title"></h4>
+      <p v-html="post.description"></p>
+    </div>
+  </div>
+<<<<<<< HEAD
+</template>
+  <script src="search.js"></script>
+=======
+  </template>
+  <script src="searchvue.js"></script>
+>>>>>>> f9cc5c13f52c0966c31fc2300e7eadb24efcf7ba
+</body>
+</html>
