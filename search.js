@@ -21,7 +21,7 @@ var vm = new Vue({
    el: "#app",
    data: {
       posts: [],
-      filter: "夢想"
+      filter: ""
    },mounted (){
       var vobj = this;
       $.get(post_api).then(function(res){
