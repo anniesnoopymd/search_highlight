@@ -17,12 +17,11 @@
 </head>
 <body>
 
-
-
   <div class="container" id="app">
     <div class="row gra">
       <div class="col-sm-12"><br/>
-        <label>Keyword</label>
+        <label>Keywords</label>
+        <h5>Total posts: {{filtered_post.length}}</h5>
         <input v-model="filter"/>
       </div>
     </div>
@@ -40,7 +39,5 @@
       </div>
     </div>
   </template>
-  <script src="search.js"></script>
-
 </body>
 </html>
